@@ -1,0 +1,61 @@
+{
+  "type" : "record",
+  "namespace" : "com.soaringclouds.avro.v1",
+  "name" : "Product",
+  "description" : "the representation of a Product",
+  "fields" : [
+    { "type" : "string",
+      "name" : "productId"
+    },
+    { "type" : ["string", "null"],
+      "name" : "productCode",
+      "default" : ""
+    },
+    { "type" : ["string", "null"], 
+      "name" : "productName",
+      "default" : ""
+    },
+    { "type" : ["string", "null"], 
+      "name" : "imageUrl",
+      "default" : ""
+    },    
+    { "type" : ["double","null"], 
+      "name" : "price",
+      "default" : ""
+    },    
+    { "type" : ["int","null"], 
+      "name" : "size" 
+    },
+    { "type" : ["double","null"], 
+      "name" : "weight" 
+    },
+    { "name" : "categories",
+      "type" : {
+          "type" : "array",
+          "items" : "string"
+      }
+    },    
+    { "type" : ["string", "null"],
+      "name" : "tags" 
+    },
+    { "name" : "dimension",
+      "type" : {
+      	  	"type" : "record", 
+      		"name" : "Dimension", 
+      		"fields" : [
+                  { "type" : ["string", "null"], 
+                    "name" : "unit"},
+                  { "type" : ["double","null"],  
+                    "name" : "length"},
+                  { "type" : ["double","null"], 
+                    "name" : "height"},
+                  { "type" : ["double", "null"], 
+                    "name" : "width" }
+              ]
+        }
+    },
+    { "type" : ["string", "null"],
+      "name" : "color" 
+    }
+  ]
+}
