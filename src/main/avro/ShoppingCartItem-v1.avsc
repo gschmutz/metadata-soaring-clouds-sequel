@@ -1,8 +1,8 @@
 {
   "type" : "record",
-  "namespace" : "com.soaringclouds.avro.toShoppingCart.v1",
-  "name" : "ToShoppingCart",
-  "description" : "the representation of a Product added to the Shopping Cart",
+  "namespace" : "com.soaringclouds.avro.shoppingCartItem.v1",
+  "name" : "ShoppingCartItem",
+  "description" : "the representation of a product added to the Shopping Cart",
   "fields" : [
     { "type" : "string",
       "name" : "sessionId"
