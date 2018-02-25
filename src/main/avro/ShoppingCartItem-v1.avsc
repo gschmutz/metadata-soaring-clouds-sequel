@@ -8,7 +8,8 @@
       "name" : "sessionId"
     },
     { "type" : "string",
-      "name" : "userId"
+      "name" : "customerId",
+      "doc" : "the unique identifier of the a Customer"
     },
     { "type" : "int",
       "name" : "quantity"
