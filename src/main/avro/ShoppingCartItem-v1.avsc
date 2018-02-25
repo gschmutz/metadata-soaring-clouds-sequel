@@ -60,9 +60,12 @@
     		      "items" : "string"  
     				}
     			},    
-    			{ "type" : ["string", "null"],
-    			  "name" : "tags" 
-    			},
+    			{ "name" : "tags",
+    			  "type" : {
+     		      "type" : "array",
+    		      "items" : "string"  
+    				}
+    			}, 
     			{ "name" : "dimension",
       			  "type" : {
       	  				"type" : "record", 
