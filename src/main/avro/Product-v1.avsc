@@ -1,6 +1,6 @@
 {
   "type" : "record",
-  "namespace" : "com.soaringclouds.avro.v1",
+  "namespace" : "com.soaringclouds.avro.product.v1",
   "name" : "Product",
   "description" : "the representation of a Product",
   "fields" : [
@@ -20,8 +20,7 @@
       "default" : ""
     },    
     { "type" : ["double","null"], 
-      "name" : "price",
-      "default" : ""
+      "name" : "price"
     },    
     { "type" : ["int","null"], 
       "name" : "size" 
