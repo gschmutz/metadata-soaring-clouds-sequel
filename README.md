@@ -1,4 +1,6 @@
-# metadata-soaring-clouds-sequel
+# Generic information on the Soaring Clouds system
+
+## Working with Avro Schemas
 This project holds all the Avro schemas of the Soaring Clouds Microservices demo. 
 
 Put a new schema in the folder /src/main/avro. 
