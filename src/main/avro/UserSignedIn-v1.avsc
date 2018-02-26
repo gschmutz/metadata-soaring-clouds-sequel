@@ -1,0 +1,11 @@
+{
+  "type" : "record",
+  "namespace" : "com.soaringclouds.avro.usersignin.v1",
+  "name" : "Customer",
+  "description" : "the representation of a User Signed-in",
+  "fields" : [
+	 { "name": "username", "doc": "email address is used for username", "type": "string" },
+	 { "name": "firstName", "doc": "First Name", "type": "string" },
+	 { "name": "lastName", "doc": "Last Name", "type": "string" }
+   ]
+}
