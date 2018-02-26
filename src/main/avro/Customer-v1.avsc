@@ -1,0 +1,54 @@
+{
+  "type" : "record",
+  "namespace" : "com.soaringclouds.avro.customer.v1",
+  "name" : "Customer",
+  "description" : "the representation of a Customer",
+  "fields" : [
+	 { "name": "firstName", "doc": "First Name", "type": "string" },
+	 { "name": "lastName", "doc": "Last Name", "type": "string" },
+     { "name" : "title",
+      "doc" : "the title used",
+      "type" : { 
+      		"type" : "enum",
+      		"doc" : "Valid titles",
+      		"name" : "TitleEnum",
+      		"symbols" : ["Mr", "Mrs", "Ms","Miss"]
+      		}
+     },	 
+     { "name": "email", "doc": "", "type": "string" },
+     { "name": "password", "doc": "", "type": ["string","null"] },
+     { "name": "dateOfBirth",
+       "doc": "02-24 (date, required)",
+       "type": ["string","null"] },
+     { "name" : "phoneNumbers",
+       "type" : {
+          "type" : "array",
+          "items" : "string"
+       }
+     },           
+     { "name" : "addresses",
+       "type" : {
+          "type" : "array",
+          "items" : "string"
+       }
+     },           
+     { "name" : "paymentDetails",
+       "type" : {
+          "type" : "array",
+          "items" : "string"
+       }
+     },           
+     { "name": "preferences", "doc": "", "type": {
+      	  	"type" : "record", 
+      		"name" : "Preference", 
+      		"fields" : [
+                  { "type" : ["boolean", "null"], 
+                    "name" : "newsLetter"},
+                  { "type" : ["boolean","null"],  
+                    "name" : "offers"}
+              ]
+        } 
+     },
+     { "name": "_id", "doc": "Technical database ID", "type": "string" }  
+     ]
+}
