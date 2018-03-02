@@ -1,0 +1,127 @@
+{ 
+  "type" : "record",
+   "namespace" : "com.soaringclouds.avro.order.v1",
+   "name": "Order",
+   "doc": "the order schema",
+   "fields": [
+        { "name": "orderId",
+       	"doc": "System generated Order ID",
+       	"type": "string" 
+       	},
+     	{ "name": "shoppingCartId",
+         "doc": "ID for the shopping cart. Should be a combination of user Id + timestamp \n    of the first item added to the cart.",
+         "type": "string" 
+        },
+        { "name": "status", 
+          "doc": "", 
+      	 "type" : { 
+      		"type" : "enum",
+      		"doc" : "Valid order statuses",
+      		"name" : "OrderStatusEnum",
+      		"symbols" : ["SHOPPING_CART", "PROCESSING", "SUCCESS", "DELIVERING", "DELIVERED", "CANCELED"]
+      		}
+    	},
+        { "name": "created_at",
+          "doc": "",
+          "type": "string" },
+        { "name": "updated_at", 
+          "doc": "", 
+          "type": "string" },
+        { "name": "total_price", 
+          "doc": "", 
+          "type": "float" },
+    	{ "name" : "currency",
+      	 "doc" : "the currency used",
+      	 "type" : { 
+      		"type" : "enum",
+      		"doc" : "Valid currencies",
+      		"name" : "CurrencyEnum",
+      		"symbols" : ["USD", "GBP", "EUR"]
+      		}
+    	},
+        { "name": "payment", 
+          "doc": "", 
+          "type": {
+      	  	"type" : "record", 
+      		"name" : "OrderPayment", 
+      		"fields" : [
+                  { "name" : "cardType",
+                    "doc" : "Credit card payment methods supported", 
+      	 				"type" : { 
+      						"type" : "enum",
+      						"doc" : "Credit Card payment methods",
+      						"name" : "CardTypeEnum",
+      						"symbols" : ["VISA_CREDIT", "VISA_DEBIT", "MASTER_CREDIT", "MASTER_DEBIT", "AMEX_CREDIT"]
+      					}
+                  },
+                  { "type" : ["string","null"],  
+                    "name" : "cardNumber"
+                  },
+                  { "type" : ["int","null"], 
+                    "name" : "start_year"
+                  },
+                  { "type" : ["int", "null"], 
+                    "name" : "start_month" 
+                  },
+                  { "type" : ["int","null"], 
+                    "name" : "expiry_year"
+                  },
+                  { "type" : ["int", "null"], 
+                    "name" : "expiry_month" 
+                  }
+              ]
+          }
+        },
+        { "name": "customer", 
+          "doc": "", 
+          "type": {
+      	  	"type" : "record", 
+      		"name" : "Customer", 
+      		"fields" : [
+                  { "type" : ["string","null"],  
+                    "name" : "customerId"
+                  },
+                  { "type" : ["string","null"], 
+                    "name" : "firstName"
+                  },
+                  { "type" : ["string", "null"], 
+                    "name" : "lastName" 
+                  },
+                  { "type" : ["string","null"], 
+                    "name" : "phone"
+                  },
+                  { "type" : ["string", "null"], 
+                    "name" : "email" 
+                  }
+              ]
+          }
+        },
+        { "name": "addresses", 
+          "doc": "", 
+          "type": {
+      	  	"type" : "record", 
+      		"name" : "Adress", 
+      		"fields" : [
+                  { "type" : ["string","null"],  
+                    "name" : "customerId"
+                  },
+                  { "type" : ["string","null"], 
+                    "name" : "firstName"
+                  },
+                  { "type" : ["string", "null"], 
+                    "name" : "lastName" 
+                  },
+                  { "type" : ["string","null"], 
+                    "name" : "phone"
+                  },
+                  { "type" : ["string", "null"], 
+                    "name" : "email" 
+                  }
+              ]
+          }
+        },
+        { "name": "line_items", 
+          "doc": "", 
+          "type": "string" }
+    ] 
+}
