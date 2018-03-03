@@ -35,7 +35,11 @@
           			},
           			{ "name": "number",
           			  "type": "string" 
-          			}
+          			},
+          			{ "name": "_id", 
+          			  "doc": "Technical database ID", 
+          			  "type": ["string","null"] 
+          			}  
           		]        
           }
        }
@@ -64,7 +68,11 @@
           			},
           			{ "name": "country",
           			  "type": "string" 
-          			}
+          			},
+          			{ "name": "_id", 
+          			  "doc": "Technical database ID", 
+          			  "type": ["string","null"] 
+          			}  
           		]        
           }
        }
@@ -83,14 +91,19 @@
           			  "type": "string" 
           			},
           			{ "name": "expirationDate",
-          			  "type": "string" 
+          			  "type": ["string", "null"] 
           			},
           			{ "name": "preferred",
-          			  "type": "boolean" 
+          			  "type": ["boolean", "null"] 
           			},
           			{ "name": "nameOnCard",
           			  "type": "string" 
-          			}          		]        
+          			},          		
+          			{ "name": "_id", 
+          			  "doc": "Technical database ID", 
+          			  "type": ["string","null"] 
+          			}  
+          		]        
           }
        }
      },           
@@ -101,7 +114,13 @@
                   { "type" : ["boolean", "null"], 
                     "name" : "newsLetter"},
                   { "type" : ["boolean","null"],  
-                    "name" : "offers"}
+                    "name" : "offers"
+                  },
+                  { "name": "_id", 
+          			  "doc": "Technical database ID", 
+          			  "type": ["string","null"] 
+          		  }  
+
               ]
         } 
      },
