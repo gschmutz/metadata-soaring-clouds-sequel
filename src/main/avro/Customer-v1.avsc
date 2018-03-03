@@ -16,10 +16,10 @@
       		}
      },	 
      { "name": "email", "doc": "", "type": "string" },
-     { "name": "password", "doc": "", "type": ["string","null"] },
+     { "name": "password", "doc": "", "type": "string" },
      { "name": "dateOfBirth",
        "doc": "02-24 (date, required)",
-       "type": ["string","null"] },
+       "type": "string" },
      { "name" : "phoneNumbers",
        "type" : {
           "type" : "array",
@@ -98,9 +98,9 @@
       	  	"type" : "record", 
       		"name" : "Preference", 
       		"fields" : [
-                  { "type" : ["boolean", "null"], 
+                  { "type" : "boolean", 
                     "name" : "newsLetter"},
-                  { "type" : ["boolean","null"],  
+                  { "type" : "boolean",  
                     "name" : "offers"}
               ]
         } 

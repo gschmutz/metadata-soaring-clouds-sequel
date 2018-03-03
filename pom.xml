@@ -106,6 +106,7 @@
 						<a516817-soaring-customers-value>src/main/avro/Customer-v1.avsc</a516817-soaring-customers-value>
 						<a516817-soaring-user-sign-ins-value>src/main/avro/UserSignedIn-v1.avsc</a516817-soaring-user-sign-ins-value>
 						<a516817-soaring-add-to-shopping-cart-value>src/main/avro/ShoppingCartItem-v1.avsc</a516817-soaring-add-to-shopping-cart-value>
+						<a516817-soaring-products-value>src/main/avro/Product-v1.avsc</a516817-soaring-products-value>
 					</subjects>
 				</configuration>
 				<goals>
