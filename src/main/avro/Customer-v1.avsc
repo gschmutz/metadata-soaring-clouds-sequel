@@ -23,19 +23,75 @@
      { "name" : "phoneNumbers",
        "type" : {
           "type" : "array",
-          "items" : "string"
+          "items" : {
+          		"name" : "PhoneNumber",
+          		"type" : "record",
+          		"fields" : [
+          			{ "name": "type",
+          			  "type": "string" 
+          			},
+          			{ "name": "countryCode",
+          			  "type": "string" 
+          			},
+          			{ "name": "number",
+          			  "type": "string" 
+          			}
+          		]        
+          }
        }
      },           
      { "name" : "addresses",
        "type" : {
           "type" : "array",
-          "items" : "string"
+          "items" : {
+          		"name" : "Address",
+          		"type" : "record",
+          		"fields" : [
+          			{ "name": "type",
+          			  "type": "string" 
+          			},
+          			{ "name": "streetName",
+          			  "type": "string" 
+          			},
+          			{ "name": "streetNumber",
+          			  "type": "string" 
+          			},
+          			{ "name": "city",
+          			  "type": "string" 
+          			},
+          			{ "name": "postcocde",
+          			  "type": "string" 
+          			},
+          			{ "name": "country",
+          			  "type": "string" 
+          			}
+          		]        
+          }
        }
      },           
      { "name" : "paymentDetails",
        "type" : {
           "type" : "array",
-          "items" : "string"
+          "items" : {
+          		"name" : "PaymentDetail",
+          		"type" : "record",
+          		"fields" : [
+          			{ "name": "type",
+          			  "type": "string" 
+          			},
+          			{ "name": "cardNumber",
+          			  "type": "string" 
+          			},
+          			{ "name": "expirationDate",
+          			  "type": "string" 
+          			},
+          			{ "name": "preferred",
+          			  "type": "boolean" 
+          			},
+          			{ "name": "nameOnCard",
+          			  "type": "string" 
+          			}          		]        
+          }
        }
      },           
      { "name": "preferences", "doc": "", "type": {

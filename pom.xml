@@ -25,8 +25,18 @@
 			<id>local-maven-repo</id>
 			<url>file:///${project.parent.basedir}/local-maven-repo</url>
 		</repository>
+  		<repository>
+    			<id>confluent</id>
+    			<url>https://packages.confluent.io/maven/</url>
+  		</repository>
 	</repositories>
-
+	<pluginRepositories>
+		<pluginRepository>
+			<id>confluent</id>
+			<url>http://packages.confluent.io/maven/</url>
+		</pluginRepository>
+	</pluginRepositories>
+	
 	<dependencies>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
@@ -45,7 +55,6 @@
 			<version>1.8.2</version>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>exec-maven-plugin</artifactId> 
@@ -85,9 +94,9 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>io.confluent</groupId>
-				<artifactId>kafka-schema-registry-maven-plugin</artifactId>
-				<version>4.0.0</version>
+   				<groupId>io.confluent</groupId>
+    				<artifactId>kafka-schema-registry-maven-plugin</artifactId>
+    				<version>4.0.0</version>
 				<configuration>
 					<schemaRegistryUrls>
 						<param>http://129.150.114.134:8081</param>
@@ -100,6 +109,7 @@
 				<goals>
 					<goal>register</goal>
 				</goals>
+
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
