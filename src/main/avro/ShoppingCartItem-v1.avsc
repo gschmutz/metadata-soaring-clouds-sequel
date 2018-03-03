@@ -43,6 +43,10 @@
     			  "default" : ""
     			},
     			{ "type" : ["string", "null"], 
+    			  "name" : "description",
+    			  "default" : ""
+    			},
+    			{ "type" : ["string", "null"], 
     			  "name" : "imageUrl",
     			  "default" : ""
     			},    
