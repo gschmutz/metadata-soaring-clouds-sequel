@@ -102,6 +102,7 @@
 						<param>http://129.150.114.134:8081</param>
 					</schemaRegistryUrls>
 					<subjects>
+						<a516817-soaring-order-created-value>src/main/avro/Order-v1.avsc</a516817-soaring-order-created-value>
 						<a516817-soaring-customers-value>src/main/avro/Customer-v1.avsc</a516817-soaring-customers-value>
 						<a516817-soaring-user-sign-ins-value>src/main/avro/UserSignedIn-v1.avsc</a516817-soaring-user-sign-ins-value>
 					</subjects>

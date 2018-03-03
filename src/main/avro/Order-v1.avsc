@@ -21,13 +21,13 @@
       		"symbols" : ["SHOPPING_CART", "PROCESSING", "SUCCESS", "DELIVERING", "DELIVERED", "CANCELED"]
       		}
     	},
-        { "name": "created_at",
+        { "name": "createdAt",
           "doc": "",
           "type": "string" },
-        { "name": "updated_at", 
+        { "name": "updatedAt", 
           "doc": "", 
           "type": "string" },
-        { "name": "total_price", 
+        { "name": "totalPrice", 
           "doc": "", 
           "type": "float" },
     	{ "name" : "currency",
@@ -58,16 +58,16 @@
                     "name" : "cardNumber"
                   },
                   { "type" : ["int","null"], 
-                    "name" : "start_year"
+                    "name" : "startYear"
                   },
                   { "type" : ["int", "null"], 
-                    "name" : "start_month" 
+                    "name" : "startMonth" 
                   },
                   { "type" : ["int","null"], 
-                    "name" : "expiry_year"
+                    "name" : "expiryYear"
                   },
                   { "type" : ["int", "null"], 
-                    "name" : "expiry_month" 
+                    "name" : "expiryMonth" 
                   }
               ]
           }
@@ -103,25 +103,79 @@
       		"name" : "Adress", 
       		"fields" : [
                   { "type" : ["string","null"],  
-                    "name" : "customerId"
+                    "name" : "name"
                   },
                   { "type" : ["string","null"], 
-                    "name" : "firstName"
+                    "name" : "line1"
                   },
                   { "type" : ["string", "null"], 
-                    "name" : "lastName" 
+                    "name" : "line2" 
                   },
                   { "type" : ["string","null"], 
-                    "name" : "phone"
+                    "name" : "city"
                   },
                   { "type" : ["string", "null"], 
-                    "name" : "email" 
-                  }
-              ]
+                    "name" : "county" 
+                  },
+                  { "type" : ["string", "null"], 
+                    "name" : "postcode" 
+                  },                  
+                  { "type" : ["string", "null"], 
+                    "name" : "country" 
+                  }            ]
           }
         },
-        { "name": "line_items", 
+        { "name": "items", 
           "doc": "", 
-          "type": "string" }
+          "type": {
+      	  	"type" : "record", 
+      		"name" : "Item", 
+      		"fields" : [
+                  { "type" : ["string","null"],  
+                    "name" : "productId"
+                  },
+                  { "type" : ["string","null"], 
+                    "name" : "productName"
+                  },
+                  { "type" : ["string", "null"], 
+                    "name" : "description" 
+                  },
+                  { "type" : ["int","null"], 
+                    "name" : "quantity"
+                  },
+                  { "type" : ["double", "null"], 
+                    "name" : "price" 
+                  },
+                  { "type" : ["int", "null"], 
+                    "name" : "size" 
+                  },                  
+                  { "type" : ["double", "null"], 
+                    "name" : "weight" 
+                  },
+    			  { "name" : "dimension",
+                    "type" : {
+      	  	        	"type" : "record", 
+      		        	"name" : "Dimension", 
+      					"fields" : [
+                  			{ "type" : ["string", "null"], 
+                    		"name" : "unit"},
+                  			{ "type" : ["double","null"],  
+                    		"name" : "length"},
+                  			{ "type" : ["double","null"], 
+                    		"name" : "height"},
+                  			{ "type" : ["double", "null"], 
+                    		"name" : "width" }
+              			]
+        			}
+    			  },
+    			  { "type" : ["string", "null"],
+      				"name" : "color" 
+                  },                              
+    			  { "type" : ["string", "null"],
+      				"name" : "sku" 
+                  }                              
+            ]
+          }
+        }
     ] 
 }
