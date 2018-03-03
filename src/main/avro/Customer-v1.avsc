@@ -59,7 +59,7 @@
           			{ "name": "city",
           			  "type": "string" 
           			},
-          			{ "name": "postcocde",
+          			{ "name": "postcode",
           			  "type": "string" 
           			},
           			{ "name": "country",

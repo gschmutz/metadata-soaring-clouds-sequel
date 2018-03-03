@@ -135,7 +135,7 @@
                     "name" : "productId"
                   },
                   { "type" : ["string","null"], 
-                    "name" : "productCode
+                    "name" : "productCode"
                   },
                   { "type" : ["string","null"], 
                     "name" : "productName"
