@@ -16,7 +16,6 @@
       		}
      },	 
      { "name": "email", "doc": "", "type": "string" },
-     { "name": "password", "doc": "", "type": ["string","null"] },
      { "name": "dateOfBirth",
        "doc": "02-24 (date, required)",
        "type": ["string","null"] },     
