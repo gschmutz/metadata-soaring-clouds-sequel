@@ -19,9 +19,10 @@
      { "name": "password", "doc": "", "type": ["string","null"] },
      { "name": "dateOfBirth",
        "doc": "02-24 (date, required)",
-       "type": ["string","null"] },
+       "type": ["string","null"] },     
+     { "name": "_id", "doc": "Technical database ID", "type": ["string","null"] },  
      { "name" : "phoneNumbers",
-       "type" : {
+       "type" : ["null", {
           "type" : "array",
           "items" : {
           		"name" : "PhoneNumber",
@@ -35,17 +36,13 @@
           			},
           			{ "name": "number",
           			  "type": "string" 
-          			},
-          			{ "name": "_id", 
-          			  "doc": "Technical database ID", 
-          			  "type": ["string","null"] 
-          			}  
+          			}
           		]        
           }
-       }
+       }]
      },           
      { "name" : "addresses",
-       "type" : {
+       "type" : ["null", {
           "type" : "array",
           "items" : {
           		"name" : "Address",
@@ -68,17 +65,13 @@
           			},
           			{ "name": "country",
           			  "type": "string" 
-          			},
-          			{ "name": "_id", 
-          			  "doc": "Technical database ID", 
-          			  "type": ["string","null"] 
-          			}  
+          			}
           		]        
           }
-       }
+       }]
      },           
      { "name" : "paymentDetails",
-       "type" : {
+       "type" : ["null", {
           "type" : "array",
           "items" : {
           		"name" : "PaymentDetail",
@@ -98,16 +91,14 @@
           			},
           			{ "name": "nameOnCard",
           			  "type": "string" 
-          			},          		
-          			{ "name": "_id", 
-          			  "doc": "Technical database ID", 
-          			  "type": ["string","null"] 
-          			}  
+          			}
           		]        
           }
-       }
+       }]
      },           
-     { "name": "preferences", "doc": "", "type": {
+     { "name": "preferences", 
+        "doc": "", 
+        "type": {
       	  	"type" : "record", 
       		"name" : "Preference", 
       		"fields" : [
@@ -115,15 +106,9 @@
                     "name" : "newsLetter"},
                   { "type" : ["boolean","null"],  
                     "name" : "offers"
-                  },
-                  { "name": "_id", 
-          			  "doc": "Technical database ID", 
-          			  "type": ["string","null"] 
-          		  }  
-
+                  }
               ]
-        } 
-     },
-     { "name": "_id", "doc": "Technical database ID", "type": "string" }  
+        }
+     }
      ]
 }

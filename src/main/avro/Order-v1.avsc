@@ -96,89 +96,96 @@
               ]
           }
         },
-        { "name": "addresses", 
-          "doc": "", 
-          "type": {
-      	  	"type" : "record", 
-      		"name" : "Adress", 
-      		"fields" : [
-                  { "type" : ["string","null"],  
-                    "name" : "name"
-                  },
-                  { "type" : ["string","null"], 
-                    "name" : "line1"
-                  },
-                  { "type" : ["string", "null"], 
-                    "name" : "line2" 
-                  },
-                  { "type" : ["string","null"], 
-                    "name" : "city"
-                  },
-                  { "type" : ["string", "null"], 
-                    "name" : "county" 
-                  },
-                  { "type" : ["string", "null"], 
-                    "name" : "postcode" 
-                  },                  
-                  { "type" : ["string", "null"], 
-                    "name" : "country" 
-                  }            ]
-          }
-        },
+     	{ "name" : "addresses",
+     	  "doc" : "a collection of addresses",
+       	  "type" : ["null", {
+          	"type" : "array",
+          		"items" : {
+          			"name" : "Address",
+          			"type" : "record",
+          			"fields" : [
+                  		{ "type" : ["string","null"],  
+              	        "name" : "name"
+                	  	},
+                  		{ "type" : ["string","null"], 
+                   	   "name" : "line1"
+                  		},
+                  		{ "type" : ["string", "null"], 
+                  	     "name" : "line2" 
+                  		},
+            	      	{ "type" : ["string","null"], 
+                	      "name" : "city"
+                  		},
+                  		{ "type" : ["string", "null"], 
+                    	  "name" : "county" 
+                  		},
+                  		{ "type" : ["string", "null"], 
+                    	  "name" : "postcode" 
+                  		},                  
+                  		{ "type" : ["string", "null"], 
+                  	    "name" : "country" 
+                    	}
+                 	]        
+              	}
+       	  	}]
+     	},           
         { "name": "items", 
-          "doc": "", 
-          "type": {
-      	  	"type" : "record", 
-      		"name" : "Item", 
-      		"fields" : [
-                  { "type" : ["string","null"],  
-                    "name" : "productId"
-                  },
-                  { "type" : ["string","null"], 
-                    "name" : "productCode"
-                  },
-                  { "type" : ["string","null"], 
-                    "name" : "productName"
-                  },
-                  { "type" : ["string", "null"], 
-                    "name" : "description" 
-                  },
-                  { "type" : ["int","null"], 
-                    "name" : "quantity"
-                  },
-                  { "type" : ["double", "null"], 
-                    "name" : "price" 
-                  },
-                  { "type" : ["int", "null"], 
-                    "name" : "size" 
-                  },                  
-                  { "type" : ["double", "null"], 
-                    "name" : "weight" 
-                  },
-    			  { "name" : "dimension",
-                    "type" : {
-      	  	        	"type" : "record", 
-      		        	"name" : "Dimension", 
-      					"fields" : [
-                  			{ "type" : ["string", "null"], 
-                    		"name" : "unit"},
-                  			{ "type" : ["double","null"],  
-                    		"name" : "length"},
-                  			{ "type" : ["double","null"], 
-                    		"name" : "height"},
-                  			{ "type" : ["double", "null"], 
-                    		"name" : "width" }
-              			]
-        			}
-    			  },
-    			  { "type" : ["string", "null"],
-      				"name" : "color" 
-                  },                              
-    			  { "type" : ["string", "null"],
-      				"name" : "sku" 
-                  }                              
-            ]
-          }
+          "doc": "collection of items ordered", 
+          "type": ["null", {
+          	"type" : "array",
+          		"items" : {
+          		   "name": "Item",
+          		   "type": "record", 
+       		       "fields" : [
+                  		{ "type" : ["string","null"],  
+                 		"name" : "productId"
+                	 	},
+                  		{ "type" : ["string","null"], 
+                    	"name" : "productCode"
+                  		},
+                  		{ "type" : ["string","null"], 
+                   		 "name" : "productName"
+                  		},
+                  		{ "type" : ["string", "null"], 
+                    	"name" : "description" 
+                  		},
+                  		{ "type" : ["int","null"], 
+                  	  	"name" : "quantity"
+                  		},
+                  		{ "type" : ["double", "null"], 
+                  		  "name" : "price" 
+                  		},
+                  		{ "type" : ["int", "null"], 
+                   		 "name" : "size" 
+                  		},                  
+                  		{ "type" : ["double", "null"], 
+                    	"name" : "weight" 
+                  		},
+    			  		{ "name" : "dimension",
+                    	 "type" : {
+      	  	        		"type" : "record", 
+      		        			"name" : "Dimension", 
+      								"fields" : [
+                  					{ "type" : ["string", "null"], 
+                    				"name" : "unit"},
+                  					{ "type" : ["double","null"],  
+                    				"name" : "length"},
+                  					{ "type" : ["double","null"], 
+                    				"name" : "height"},
+                  					{ "type" : ["double", "null"], 
+                    				"name" : "width" }
+              					]
+        					}
+    			  		},
+    			  		{ "type" : ["string", "null"],
+      						"name" : "color" 
+                  		},                              
+    			  		{ "type" : ["string", "null"],
+      					"name" : "sku" 
+                 	 	}
+					]
+				}
+			}]                 	                               
         }
     ] 
 }
