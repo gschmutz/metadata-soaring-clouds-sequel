@@ -4,3 +4,6 @@
 .settings/org.eclipse.jdt.core.prefs
 local-maven-repo/com/trivadis/avro-idl/1.0-SNAPSHOT/avro-idl-1.0-SNAPSHOT.jar
 target/**
+local-maven-repo/com/trivadis/avro-idl/1.0-SNAPSHOT/avro-idl-1.0-SNAPSHOT.pom
+local-maven-repo/com/trivadis/avro-idl/1.0-SNAPSHOT/maven-metadata-local.xml
+local-maven-repo/com/trivadis/avro-idl/maven-metadata-local.xml

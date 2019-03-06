@@ -102,13 +102,13 @@
 						<param>http://129.150.114.134:8081</param>
 					</schemaRegistryUrls>
 					<subjects>
-						<a516817-soaring-order-created-value>src/main/avro/Order-v1.avsc</a516817-soaring-order-created-value>
-						<a516817-soaring-customers-value>src/main/avro/Customer-v1.avsc</a516817-soaring-customers-value>
-						<a516817-soaring-user-sign-ins-value>src/main/avro/UserSignedIn-v1.avsc</a516817-soaring-user-sign-ins-value>
-						<a516817-soaring-add-to-shopping-cart-value>src/main/avro/ShoppingCartItem-v1.avsc</a516817-soaring-add-to-shopping-cart-value>
-						<a516817-soaring-products-value>src/main/avro/Product-v1.avsc</a516817-soaring-products-value>
-						<a516817-soaring-payment-status-value>src/main/avro/PaymentStatus-v1.avsc</a516817-soaring-payment-status-value>
-						<a516817-soaring-customer-status-value>src/main/avro/CustomerStatus-v1.avsc</a516817-soaring-customer-status-value>
+						<idcs-1d61df536acb4e9d929e79a92f3414b5-soaringordercreated-value>src/main/avro/Order-v1.avsc</idcs-1d61df536acb4e9d929e79a92f3414b5-soaringordercreated-value>
+						<idcs-1d61df536acb4e9d929e79a92f3414b5-soaringcustomers-value>src/main/avro/Customer-v1.avsc</idcs-1d61df536acb4e9d929e79a92f3414b5-soaringcustomers-value>
+						<idcs-1d61df536acb4e9d929e79a92f3414b5-soaringusersignins-value>src/main/avro/UserSignedIn-v1.avsc</idcs-1d61df536acb4e9d929e79a92f3414b5-soaringusersignins-value>
+						<idcs-1d61df536acb4e9d929e79a92f3414b5-soaringaddtoshoppingcart-value>src/main/avro/ShoppingCartItem-v1.avsc</idcs-1d61df536acb4e9d929e79a92f3414b5-soaringaddtoshoppingcart-value>
+						<idcs-1d61df536acb4e9d929e79a92f3414b5-soaringproducts-value>src/main/avro/Product-v1.avsc</idcs-1d61df536acb4e9d929e79a92f3414b5-soaringproducts-value>
+						<idcs-1d61df536acb4e9d929e79a92f3414b5-soaringpaymentstatus-value>src/main/avro/PaymentStatus-v1.avsc</idcs-1d61df536acb4e9d929e79a92f3414b5-soaringpaymentstatus-value>
+						<idcs-1d61df536acb4e9d929e79a92f3414b5-soaringcustomerstatus-value>src/main/avro/CustomerStatus-v1.avsc</idcs-1d61df536acb4e9d929e79a92f3414b5-soaringcustomerstatus-value>
 					</subjects>
 				</configuration>
 				<goals>
