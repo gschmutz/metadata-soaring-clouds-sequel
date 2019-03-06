@@ -99,7 +99,7 @@
     				<version>4.0.0</version>
 				<configuration>
 					<schemaRegistryUrls>
-						<param>http://129.150.114.134:8081</param>
+						<param>http://129.156.113.125:8081</param>
 					</schemaRegistryUrls>
 					<subjects>
 						<idcs-1d61df536acb4e9d929e79a92f3414b5-soaringordercreated-value>src/main/avro/Order-v1.avsc</idcs-1d61df536acb4e9d929e79a92f3414b5-soaringordercreated-value>
