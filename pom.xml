@@ -99,16 +99,16 @@
     				<version>5.1.0</version>
 				<configuration>
 					<schemaRegistryUrls>
-						<param>http://3.120.178.33:8081</param>
+						<param>http://130.61.35.61:8081</param>
 					</schemaRegistryUrls>
 					<subjects>
-						<a516817-soaringordercreated-value>src/main/avro/Order-v1.avsc</a516817-soaringordercreated-value>
-						<a516817-soaringcustomers-value>src/main/avro/Customer-v1.avsc</a516817-soaringcustomers-value>
-						<a516817-soaringusersignins-value>src/main/avro/UserSignedIn-v1.avsc</a516817-soaringusersignins-value>
-						<a516817-soaringaddtoshoppingcart-value>src/main/avro/ShoppingCartItem-v1.avsc</a516817-soaringaddtoshoppingcart-value>
-						<a516817-soaringproducts-value>src/main/avro/Product-v1.avsc</a516817-soaringproducts-value>
-						<a516817-soaringpaymentstatus-value>src/main/avro/PaymentStatus-v1.avsc</a516817-soaringpaymentstatus-value>
-						<a516817-soaringcustomerstatus-value>src/main/avro/CustomerStatus-v1.avsc</a516817-soaringcustomerstatus-value>
+						<soaring-ordercreated-value>src/main/avro/Order-v1.avsc</soaring-ordercreated-value>
+						<soaring-customers-value>src/main/avro/Customer-v1.avsc</soaring-customers-value>
+						<soaring-usersignins-value>src/main/avro/UserSignedIn-v1.avsc</soaring-usersignins-value>
+						<soaring-addtoshoppingcart-value>src/main/avro/ShoppingCartItem-v1.avsc</soaring-addtoshoppingcart-value>
+						<soaring-products-value>src/main/avro/Product-v1.avsc</soaring-products-value>
+						<soaring-paymentstatus-value>src/main/avro/PaymentStatus-v1.avsc</soaring-paymentstatus-value>
+						<soaring-customerstatus-value>src/main/avro/CustomerStatus-v1.avsc</soaring-customerstatus-value>
 					</subjects>
 				</configuration>
 				<goals>
