@@ -1,0 +1,20 @@
+{
+"type" : "record",
+"namespace" : "com.soaringclouds.avro.shipmentpickedup.v1",
+"name" : "ShipmentPickedup",
+         "description" : "the representation of a ShipmentPickedup",
+         "fields" : [
+		{
+		"name" : "orderId",
+		"type" : "long"
+		},	
+		{
+		"name" : "shipper",
+		"type" : "string"
+		},
+		{
+		"name" : "pickupDate",
+		"type": { "type": "int", "logicalType": "date" }
+		}								
+		]
+}

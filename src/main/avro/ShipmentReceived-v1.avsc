@@ -1,0 +1,20 @@
+{
+"type" : "record",
+"namespace" : "com.soaringclouds.avro.shipmentreceived.v1",
+"name" : "ShipmentReceived",
+         "description" : "the representation of a ShipmentReceived",
+         "fields" : [
+		{
+		"name" : "orderId",
+		"type" : "long"
+		},	
+		{
+		"name" : "shipper",
+		"type" : "string"
+		},
+		{
+		"name" : "pickupDate",
+		"type": { "type": "int", "logicalType": "date" }
+		}								
+		]
+}

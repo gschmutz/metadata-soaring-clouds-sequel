@@ -105,10 +105,13 @@
 						<soaring-ordercreated-value>src/main/avro/Order-v1.avsc</soaring-ordercreated-value>
 						<soaring-customers-value>src/main/avro/Customer-v1.avsc</soaring-customers-value>
 						<soaring-usersignins-value>src/main/avro/UserSignedIn-v1.avsc</soaring-usersignins-value>
-						<soaring-addtoshoppingcart-value>src/main/avro/ShoppingCartItem-v1.avsc</soaring-addtoshoppingcart-value>
+						<soaring-add-to-shopping-cart-value>src/main/avro/ShoppingCartItem-v1.avsc</soaring-add-to-shopping-cart-value>
 						<soaring-products-value>src/main/avro/Product-v1.avsc</soaring-products-value>
 						<soaring-paymentstatus-value>src/main/avro/PaymentStatus-v1.avsc</soaring-paymentstatus-value>
 						<soaring-customerstatus-value>src/main/avro/CustomerStatus-v1.avsc</soaring-customerstatus-value>
+						<soaring-shipmentoffer-value>src/main/avro/ShipmentOffer-v1.avsc</soaring-shipmentoffer-value>
+						<soaring-shipmentpickedup-value>src/main/avro/ShipmentPickedup-v1.avsc</soaring-shipmentpickedup-value>
+						<soaring-shipmentreceived-value>src/main/avro/ShipmentReceived-v1.avsc</soaring-shipmentreceived-value>
 					</subjects>
 				</configuration>
 				<goals>

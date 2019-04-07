@@ -1,0 +1,32 @@
+{
+"type" : "record",
+"namespace" : "com.soaringclouds.avro.shipmentoffer.v1",
+"name" : "ShipmentOffer",
+         "description" : "the representation of a ShipmentOffer",
+         "fields" : [
+		{
+		"name" : "id",
+		"type" : "long"
+		},
+		{
+		"name" : "shipper",
+		"type" : "string"
+		},
+		{
+		"name" : "deliveryDate",
+		"type": { "type": "int", "logicalType": "date" }
+		},
+		{
+		"name" : "price",
+		"type" : "double"
+		},	
+		{
+		"name" : "orderId",
+		"type" : "long"
+		},	
+		{
+		"name" : "trackingInfo",
+		"type" : ["null", "boolean"]
+		}								
+		]
+}
