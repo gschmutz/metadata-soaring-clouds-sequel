@@ -6,7 +6,7 @@
          "fields" : [
 		{
 		"name" : "orderId",
-		"type" : "long"
+		"type" : "string"
 		},	
 		{
 		"name" : "shipper",
