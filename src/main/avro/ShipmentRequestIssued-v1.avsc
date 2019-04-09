@@ -1,0 +1,47 @@
+{
+"type" : "record",
+"namespace" : "com.soaringclouds.avro.shipmentrequestissued.v1",
+"name" : "ShipmentRequestIssued",
+         "description" : "the representation of a ShipmentRequestIssued",
+         "fields" : [
+		{
+		"name" : "date",
+		"type": { "type": "int", "logicalType": "date" }
+		},
+		{
+		"name" : "orderId",
+		"type" : "string"
+		},
+		{
+		"name" : "productId",
+		"type" : "string"
+		},
+     	{ "name": "deliveryAddress", 
+        	"doc": "", 
+        	"type": {
+      	  		"type" : "record",																
+      			"name" : "Address", 
+      			"fields" : [
+          			{ "name": "type",
+          			  "type": "string" 
+          			},
+          			{ "name": "streetName",
+          			  "type": "string" 
+          			},
+          			{ "name": "streetNumber",
+          			  "type": "string" 
+          			},
+          			{ "name": "city",
+          			  "type": "string" 
+          			},
+          			{ "name": "postcode",
+          			  "type": "string" 
+          			},
+          			{ "name": "country",
+          			  "type": "string" 
+          			}      		
+				]
+			}
+        }
+    ]
+}

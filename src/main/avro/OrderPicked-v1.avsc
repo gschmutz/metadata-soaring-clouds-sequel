@@ -1,0 +1,16 @@
+{
+"type" : "record",
+"namespace" : "com.soaringclouds.avro.orderpicked.v1",
+"name" : "OrderPicked",
+         "description" : "the representation of a OrderPicked",
+         "fields" : [
+		{
+		"name" : "date",
+		"type": { "type": "int", "logicalType": "date" }
+		},
+		{
+		"name" : "orderId",
+		"type" : "string"
+		}								
+		]
+}

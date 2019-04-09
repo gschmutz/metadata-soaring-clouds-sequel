@@ -54,6 +54,12 @@
 			<artifactId>avro</artifactId>
 			<version>1.8.2</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
+		<dependency>
+    			<groupId>joda-time</groupId>
+    			<artifactId>joda-time</artifactId>
+    			<version>2.10.1</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -112,6 +118,8 @@
 						<soaring-shipmentoffer-value>src/main/avro/ShipmentOffer-v1.avsc</soaring-shipmentoffer-value>
 						<soaring-shipmentpickedup-value>src/main/avro/ShipmentPickedup-v1.avsc</soaring-shipmentpickedup-value>
 						<soaring-shipmentreceived-value>src/main/avro/ShipmentReceived-v1.avsc</soaring-shipmentreceived-value>
+						<soaring-orderpicked-value>src/main/avro/OrderPicked-v1.avsc</soaring-orderpicked-value>
+						<soaring-shipmentrequestissued-value>src/main/avro/ShipmentRequestIssued-v1.avsc</soaring-shipmentrequestissued-value>
 					</subjects>
 				</configuration>
 				<goals>
